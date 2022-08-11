@@ -1,11 +1,11 @@
 {
-  "name": "markdown-wasm",
+  "name": "@natemoore/markdown-wasm",
   "version": "1.2.0",
   "description": "Markdown parser and html generator implemented in WebAssembly",
   "browser": "dist/markdown.js",
   "main": "dist/markdown.node.js",
-  "jsnext:main": "dist/markdown.es.js",
-  "module": "dist/markdown.es.js",
+  "jsnext:main": "dist/markdown.mjs",
+  "module": "dist/markdown.mjs",
   "typings": "markdown.d.ts",
   "homepage": "https://github.com/rsms/markdown-wasm",
   "repository": {
@@ -18,8 +18,8 @@
     "dist/markdown.js.map",
     "dist/markdown.node.js",
     "dist/markdown.node.js.map",
-    "dist/markdown.es.js",
-    "dist/markdown.es.js.map",
+    "dist/markdown.mjs",
+    "dist/markdown.mjs.map",
     "markdown.d.ts",
     "README.md",
     "LICENSE"
