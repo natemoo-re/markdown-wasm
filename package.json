@@ -1,6 +1,6 @@
 {
   "name": "@natemoore/markdown-wasm",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Markdown parser and html generator implemented in WebAssembly",
   "browser": "dist/markdown.js",
   "main": "dist/markdown.node.js",
@@ -24,6 +24,16 @@
     "README.md",
     "LICENSE"
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/markdown.mjs",
+      "require": "./dist/markdown.node.js",
+      "default": "./dist/markdown.js"
+    },
+    "./dist/*": "./dist/*",
+    "./markdown.d.ts": "./markdown.d.ts",
+    "./package.json": "./package.json"
+  },
   "scripts": {
     "build": "wasmc",
     "build-debug": "wasmc -g",
